@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- titolo -->
-  <title>Campo minato</title>
+  <title>CampoFortunato</title>
   <!-- link style -->
   <link rel="stylesheet" href="style.css">
   <!-- cdn font awesome -->
@@ -14,16 +14,20 @@
 </head>
 
 <body>
-
+  <div id="banner" class="">
+    <h2 id="result">pippo</h2>
+    <p>hai fatto <span id="result-counter">0</span> punti</p>
+    <button id="restart-btn">Rigioca</button>
+  </div>
   <!-- 00000000 HEADER 00000000 -->
   <header>
-    <h1>Campo Minato</h1>
+    <h1>CampoFortunato</h1>
     <div class="btn-container">
       <button id="play" class="btn">Gioca</button>
       <select name="difficulty" id="difficulty" class="btn">
-        <option value="easy">Easy</option>
-        <option value="medium">Medium</option>
-        <option value="hard">Hard</option>
+        <option value="easy">Facile</option>
+        <option value="medium">Media</option>
+        <option value="hard">Difficile</option>
       </select>
     </div>
   </header>
@@ -33,6 +37,9 @@
     <div id="grid">
       <h2 id="pre-select">Seleziona una difficoltà <br> poi premi gioca</h2>
       <!-- <div class="square"></div> -->
+    </div>
+    <div id="counter-container">
+      Il tuo punteggio è: <span id="counter">0</span>
     </div>
   </main>
 
